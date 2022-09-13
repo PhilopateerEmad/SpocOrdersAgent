@@ -160,12 +160,16 @@ class LoginFragment : Fragment() {
 
 
         } else {
-            binding!!.loginButton.isEnabled = true
-            Toast.makeText(
-                activity!!.applicationContext,
-                "No Internet",
-                Toast.LENGTH_SHORT
-            ).show()
+            withContext(Dispatchers.Main){
+                binding!!.loginButton.isEnabled = true
+
+                Toast.makeText(
+                    activity!!.applicationContext,
+                    "No Internet",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+
 
         }
         return response
