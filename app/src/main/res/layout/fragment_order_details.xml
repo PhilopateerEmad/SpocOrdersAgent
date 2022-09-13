@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/order_details_swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/my_screen"
+
+        android:padding="@dimen/_10sdp"
+        tools:context=".presentation.ui.OrderDetailsFragment">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingEnd="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/constraintLayoutGre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5"
+            tools:ignore="RtlSymmetry">
+
+            <ScrollView
+
+
+                android:id="@+id/whole_layout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/items_background"
+                android:visibility="invisible"
+
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+
+                    <TextView
+                        android:id="@+id/pharmacy_name_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="Pharmacy Name"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/pharmacy_name_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+
+                        android:background="@drawable/details_fields_bg"
+                        android:gravity="start|center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="TextView"
+                        android:textSize="@dimen/_9sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pharmacy_name_label" />
+
+                    <TextView
+                        android:id="@+id/order_date_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="Order Date"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pharmacy_name_tv" />
+
+                    <TextView
+                        android:id="@+id/order_date_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:background="@drawable/details_fields_bg"
+                        android:gravity="start|center"
+                        android:padding="@dimen/_5sdp"
+
+
+                        android:text="TextView"
+                        android:textSize="@dimen/_9sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/order_date_label" />
+
+                    <TextView
+                        android:id="@+id/distributor_name_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="Distributor Name"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/order_date_tv" />
+
+                    <TextView
+                        android:id="@+id/distributor_name_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:background="@drawable/details_fields_bg"
+                        android:gravity="start|center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="TextView"
+                        android:textSize="@dimen/_9sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/distributor_name_label" />
+
+                    <TextView
+                        android:id="@+id/branch_name_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="Branch Name"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/distributor_name_tv" />
+
+                    <TextView
+                        android:id="@+id/branch_name_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:background="@drawable/details_fields_bg"
+                        android:gravity="start|center"
+                        android:padding="@dimen/_5sdp"
+
+                        android:text="TextView"
+                        android:textSize="@dimen/_9sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/branch_name_label" />
+
+                    <TextView
+                        android:id="@+id/pharmacy_name_at_distributor_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="Pharmacy Code At Distributor"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/branch_name_tv" />
+
+                    <TextView
+                        android:id="@+id/pharmacy_name_at_distributor_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:background="@drawable/details_fields_bg"
+                        android:padding="@dimen/_5sdp"
+
+                        android:text="TextView"
+                        android:textSize="@dimen/_9sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pharmacy_name_at_distributor_label" />
+
+                    <TextView
+                        android:id="@+id/expired_good_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="Expierd Good"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pharmacy_name_at_distributor_tv" />
+
+                    <TextView
+                        android:id="@+id/expired_good_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:background="@drawable/details_fields_bg"
+                        android:gravity="start|center"
+                        android:padding="@dimen/_5sdp"
+
+                        android:text="TextView"
+                        android:textSize="@dimen/_9sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/expired_good_label" />
+
+                    <TextView
+                        android:id="@+id/value_of_expired_goods_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="Value Of Expierd Goods"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/expired_good_tv" />
+
+                    <TextView
+                        android:id="@+id/value_of_expired_goods_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/details_fields_bg"
+                        android:gravity="start|center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="TextView"
+                        android:textSize="@dimen/_9sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/value_of_expired_goods_label" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:id="@+id/constraintLayoutGre"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/_5sdp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/constraintLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/items_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:id="@+id/product_list_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="4dp"
+                    android:paddingBottom="4dp"
+                    android:text="Product List"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/details_fields_bg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/product_list_label">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/products_recyclerview"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/items_background"
+                        android:foregroundGravity="center"
+                        android:maxHeight="@dimen/_200sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:spanCount="2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ProgressBar>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

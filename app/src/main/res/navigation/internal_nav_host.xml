@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/internal_nav_host"
+    app:startDestination="@id/ordersListFragment">
+
+    <fragment
+        android:id="@+id/ordersListFragment"
+        android:name="com.philoSpocAgent.spocordersagent.presentation.ui.OrdersListFragment"
+
+        android:label="fragment_my_orders_list"
+        tools:layout="@layout/fragment_my_orders_list" >
+        <action
+            android:id="@+id/action_ordersListFragment_to_orderDetailsFragment"
+            app:destination="@id/orderDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderDetailsFragment"
+        android:name="com.philoSpocAgent.spocordersagent.presentation.ui.OrderDetailsFragment"
+        android:label="fragment_order_details"
+        tools:layout="@layout/fragment_order_details" />
+    <fragment
+        android:id="@+id/newOrderFragment"
+        android:name="com.philoSpocAgent.spocordersagent.presentation.ui.NewOrderFragment"
+        android:label="fragment_new_order"
+        tools:layout="@layout/fragment_new_order" >
+        <action
+            android:id="@+id/action_newOrderFragment_to_ordersListFragment"
+            app:destination="@id/ordersListFragment" />
+    </fragment>
+</navigation>
