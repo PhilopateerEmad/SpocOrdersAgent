@@ -90,7 +90,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_18sdp"
-
+                app:layout_constraintHeight_min="@dimen/_25sdp"
+                app:layout_constraintHeight_max="@dimen/_30sdp"
                 app:boxBackgroundMode="outline"
                 app:boxStrokeColor="@android:color/transparent"
                 app:boxStrokeWidth="0dp"
@@ -109,9 +110,10 @@
                     android:id="@+id/email_text_field"
 
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_23sdp"
-                    android:hint="@string/e_mail"
+                    android:layout_height="match_parent"
+
                     android:background="@drawable/text_field_background"
+                    android:hint="@string/e_mail"
 
                     android:inputType="textEmailAddress"
                     android:nextFocusDown="@id/password_text_field"
@@ -124,6 +126,8 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                app:layout_constraintHeight_min="@dimen/_25sdp"
+                app:layout_constraintHeight_max="@dimen/_30sdp"
                 android:layout_marginHorizontal="@dimen/_18sdp"
                 android:layout_marginVertical="@dimen/_18sdp"
                 android:layout_marginTop="42dp"
@@ -145,7 +149,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/password_text_field"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_23sdp"
+                    android:layout_height="match_parent"
                     android:hint="@string/password"
                     android:background="@drawable/text_field_background"
 
