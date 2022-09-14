@@ -60,8 +60,7 @@
                         android:paddingEnd="4dp"
                         android:paddingBottom="4dp"
                         android:text="Pharmacy Name"
-                        android:textSize="@dimen/_9sdp"
-                        android:textStyle="bold"
+                        android:textSize="@dimen/_10sdp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -93,8 +92,7 @@
                         android:paddingEnd="4dp"
                         android:paddingBottom="4dp"
                         android:text="Order Date"
-                        android:textSize="@dimen/_9sdp"
-                        android:textStyle="bold"
+                        android:textSize="@dimen/_10sdp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/pharmacy_name_tv" />
 
@@ -127,8 +125,7 @@
                         android:paddingEnd="4dp"
                         android:paddingBottom="4dp"
                         android:text="Distributor Name"
-                        android:textSize="@dimen/_9sdp"
-                        android:textStyle="bold"
+                        android:textSize="@dimen/_10sdp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/order_date_tv" />
 
@@ -158,8 +155,7 @@
                         android:paddingEnd="4dp"
                         android:paddingBottom="4dp"
                         android:text="Branch Name"
-                        android:textSize="@dimen/_9sdp"
-                        android:textStyle="bold"
+                        android:textSize="@dimen/_10sdp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/distributor_name_tv" />
 
@@ -190,8 +186,7 @@
                         android:paddingEnd="4dp"
                         android:paddingBottom="4dp"
                         android:text="Pharmacy Code At Distributor"
-                        android:textSize="@dimen/_9sdp"
-                        android:textStyle="bold"
+                        android:textSize="@dimen/_10sdp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/branch_name_tv" />
 
@@ -222,8 +217,7 @@
                         android:paddingEnd="4dp"
                         android:paddingBottom="4dp"
                         android:text="Expierd Good"
-                        android:textSize="@dimen/_9sdp"
-                        android:textStyle="bold"
+                        android:textSize="@dimen/_10sdp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/pharmacy_name_at_distributor_tv" />
 
@@ -255,8 +249,7 @@
                         android:paddingEnd="4dp"
                         android:paddingBottom="4dp"
                         android:text="Value Of Expierd Goods"
-                        android:textSize="@dimen/_9sdp"
-                        android:textStyle="bold"
+                        android:textSize="@dimen/_10sdp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/expired_good_tv" />
 
@@ -317,8 +310,7 @@
                     android:paddingEnd="4dp"
                     android:paddingBottom="4dp"
                     android:text="Product List"
-                    android:textSize="@dimen/_9sdp"
-                    android:textStyle="bold"
+                    android:textSize="@dimen/_10sdp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 

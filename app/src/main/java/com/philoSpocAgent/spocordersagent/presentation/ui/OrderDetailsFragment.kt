@@ -63,6 +63,7 @@ class OrderDetailsFragment : Fragment() {
     ): View {
 
         (activity as AppCompatActivity?)!!.supportActionBar!!.title = "Order Details"
+        
         ordersViewModel = ViewModelProvider(this)[OrdersViewModel::class.java]
         binding = FragmentOrderDetailsBinding.inflate(layoutInflater)
         adapter = ProductsListAdapter()

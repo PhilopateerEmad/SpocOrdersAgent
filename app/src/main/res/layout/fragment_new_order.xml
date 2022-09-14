@@ -74,8 +74,7 @@
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:padding="4dp"
                         android:text="Pharmacy Name"
-                        android:textSize="@dimen/_9sdp"
-                        android:textStyle="bold"
+                        android:textSize="@dimen/_10sdp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -123,8 +122,7 @@
                         android:layout_marginTop="8dp"
                         android:padding="4dp"
                         android:text="Distributor Name"
-                        android:textSize="@dimen/_9sdp"
-                        android:textStyle="bold"
+                        android:textSize="@dimen/_10sdp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/pharmacy_name_outline" />
 
@@ -172,8 +170,7 @@
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:padding="4dp"
                         android:text="Branch Name"
-                        android:textSize="@dimen/_9sdp"
-                        android:textStyle="bold"
+                        android:textSize="@dimen/_10sdp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/distributor_name_outline" />
 
@@ -223,8 +220,7 @@
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:padding="4dp"
                         android:text="Pharmacy Code At Distributor"
-                        android:textSize="@dimen/_9sdp"
-                        android:textStyle="bold"
+                        android:textSize="@dimen/_10sdp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/branch_name_outline" />
                     <com.google.android.material.textfield.TextInputLayout
@@ -272,8 +268,7 @@
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:padding="4dp"
                         android:text="Expierd Good"
-                        android:textSize="@dimen/_9sdp"
-                        android:textStyle="bold"
+                        android:textSize="@dimen/_10sdp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/pharmacy_name_at_distributor_outline" />
 
@@ -318,8 +313,7 @@
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:padding="4dp"
                         android:text="Value Of Expierd Goods"
-                        android:textSize="@dimen/_9sdp"
-                        android:textStyle="bold"
+                        android:textSize="@dimen/_10sdp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/expired_good_outline" />
 
@@ -409,8 +403,7 @@
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:padding="4dp"
                         android:text="Add Product"
-                        android:textSize="@dimen/_9sdp"
-                        android:textStyle="bold"
+                        android:textSize="@dimen/_10sdp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -473,8 +466,7 @@
                                 android:layout_marginEnd="@dimen/_5sdp"
                                 android:padding="4dp"
                                 android:text="Product Name"
-                                android:textSize="@dimen/_8sdp"
-                                android:textStyle="bold"
+                                android:textSize="@dimen/_9sdp"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -520,8 +512,7 @@
 
                                 android:padding="4dp"
                                 android:text="Quantity"
-                                android:textSize="@dimen/_8sdp"
-                                android:textStyle="bold"
+                                android:textSize="@dimen/_9sdp"
                                 app:layout_constraintStart_toEndOf="@+id/product_name_outline"
                                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -576,8 +567,7 @@
                         android:layout_marginTop="8dp"
                         android:padding="4dp"
                         android:text="Product List"
-                        android:textSize="@dimen/_9sdp"
-                        android:textStyle="bold"
+                        android:textSize="@dimen/_10sdp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
 
