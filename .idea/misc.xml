@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/EvaPharma/SpocOrdersAgent/app/src/main/res/drawable/details_fields_bg.xml" value="0.1935" />
+        <entry key="..\:/EvaPharma/SpocOrdersAgent/app/src/main/res/drawable/items_background.xml" value="0.1935" />
+        <entry key="..\:/EvaPharma/SpocOrdersAgent/app/src/main/res/drawable/text_field_background.xml" value="0.1995" />
         <entry key="..\:/EvaPharma/SpocOrdersAgent/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
         <entry key="..\:/EvaPharma/SpocOrdersAgent/app/src/main/res/layout/fragment_login.xml" value="0.23802083333333332" />
         <entry key="..\:/EvaPharma/SpocOrdersAgent/app/src/main/res/layout/fragment_main.xml" value="0.4" />
@@ -12,7 +15,7 @@
         <entry key="..\:/EvaPharma/SpocOrdersAgent/app/src/main/res/layout/list_item.xml" value="0.15" />
         <entry key="..\:/EvaPharma/SpocOrdersAgent/app/src/main/res/layout/orders_card_view.xml" value="0.536" />
         <entry key="..\:/EvaPharma/SpocOrdersAgent/app/src/main/res/layout/products_card_view.xml" value="0.15" />
-        <entry key="..\:/EvaPharma/SpocOrdersAgent/app/src/main/res/layout/products_simple_card_view.xml" value="0.15" />
+        <entry key="..\:/EvaPharma/SpocOrdersAgent/app/src/main/res/layout/products_simple_card_view.xml" value="0.579062159214831" />
         <entry key="..\:/EvaPharma/SpocOrdersAgent/app/src/main/res/menu/tasks_menu.xml" value="0.23802083333333332" />
         <entry key="..\:/EvaPharma/SpocOrdersAgent/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>

@@ -22,6 +22,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="@dimen/_5sdp"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
             android:orientation="vertical"
             android:background="@drawable/items_background"
             android:visibility="visible"

@@ -29,7 +29,7 @@ object AppModule {
     @Singleton
     fun provideSpocApi(): SpocApi {
         return Retrofit.Builder()
-            .baseUrl("http://fadygeorge-001-site1.htempurl.com/")
+            .baseUrl("http://spocorder-001-site1.atempurl.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(SpocApi::class.java)
